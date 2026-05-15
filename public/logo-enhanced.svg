@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 152" width="240" height="152">
+  <defs>
+    <linearGradient id="dotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="mtnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="dotShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#3b82f6" flood-opacity="0.4"/>
+    </filter>
+    <filter id="mtnShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1e3a8a" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- White background -->
+  <rect width="240" height="152" fill="#ffffff"/>
+
+  <!-- Dots above letters -->
+  <circle cx="30"  cy="17" r="8" fill="url(#dotGrad)" filter="url(#dotShadow)"/>
+  <circle cx="90"  cy="17" r="8" fill="url(#dotGrad)" filter="url(#dotShadow)"/>
+  <circle cx="150" cy="17" r="8" fill="url(#dotGrad)" filter="url(#dotShadow)"/>
+  <circle cx="210" cy="17" r="8" fill="url(#dotGrad)" filter="url(#dotShadow)"/>
+
+  <!-- Letters: s i c e -->
+  <text x="30"  y="72" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="url(#textGrad)">s</text>
+  <text x="90"  y="72" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="url(#textGrad)">i</text>
+  <text x="150" y="72" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="url(#textGrad)">c</text>
+  <text x="210" y="72" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="url(#textGrad)">e</text>
+
+  <!-- Mountain peaks (straight-edged, faithful to original) -->
+  <polygon points="3,130  30,80  57,130"  fill="url(#mtnGrad)" filter="url(#mtnShadow)"/>
+  <polygon points="63,130 90,80  117,130" fill="url(#mtnGrad)" filter="url(#mtnShadow)"/>
+  <polygon points="123,130 150,80 177,130" fill="url(#mtnGrad)" filter="url(#mtnShadow)"/>
+  <polygon points="183,130 210,80 237,130" fill="url(#mtnGrad)" filter="url(#mtnShadow)"/>
+
+  <!-- Thin accent line under mountains -->
+  <line x1="3" y1="131" x2="237" y2="131" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Subtitle -->
+  <text x="120" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7.8" font-weight="600" fill="#475569" letter-spacing="1.4">SUNSHINE INSTITUTE OF COMPUTER EDUCATION</text>
+</svg>
